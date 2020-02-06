@@ -1,52 +1,50 @@
 # Gender-Recognition-through-voice-sampling
 Using FFT based tools of Python and GUI tools of JAVA
 
-## Features
+## Summary
 
 * Gender Recognition program through analyzing voice samples and data
-* Menu driven GUI written in JAVA Swing tools
-* Login and Signup system for existing and new players
-* Point system for all player
-* Track of mines left
-* Leaderboard available to track best scores
-* 3 levels to play the game : EASY, INTERMEDIATE and HARD
-* Random placement of mines each time (NOT A FIXED GAMEPLAY)
+* Menu driven GUI written in JAVA Swing JFrame tools
+* The project has 2 parts: Training and testing
+* For training, a real time dataset of about 100 persons was collected and pt in the training program
+* The main menu has opions to select data for training or testing
+* The approach was to collect enough male and female audio sample data. Then using frequency analysis tools especially FFT tools available in Python, the average frequency of each audio sample was calculated through a modelling based on finding the mean frequency considering the weight/magnitude of each frequency sample in FFT output.
+* Gathering multiple such average freqency values for each gender, virtual sets/gropus were made to distinguish both sexes by calculating a dynamic threshold frwuency line that separates both the gender and which changes with each data sample added to the dataset.
+* Once the program is trained and the threshold is calculated, test data is given. The program based on the results of training tries to predict the gender of the test data.
+* Along with gender, the program also gives its confidence in its output(which is again modelled based on the average thresholds of male, female and the boundary separating the 2 genders).
+* After prediction, the program asks the user to validate its prediction. If the user agrees to the prediction, then the program adds the new data information to that particular gender data otherwise it adds the data to the gender opposite to which the program predicted.
+* Due to this, the program becomes dynamic in nature. It keeps on improving its accuracy of prediction with each prediction. And as a result it is expected that the confidence of the program also must increase for a large enough dataset.
 
-## Getting Started
+## Tools and Languages
 
-This is a C project. All you need to have is GCC compiler pre-installed in your system. Just download this project and and you are ready to go.
+This project requires JAVA and python compiler and interpreter respectively. It used JAVA swing classes for the GUI to interact with the user and uses Python scripts in the backend to run the frequency spectrum analysis of voice samples.
 
 ### Prerequisites
 
-C Compiler on your system
+JAVA and Python
 
-
-### Running the Tests
-
-This is a menu driven project whose output will be shown in the terminal window only. It has easy to understand UI, so much thought is not needed to be given to run the tests. Just follow the options on your screen :)
-
-### Running the Code
-
-As mentioned this is a menu driven project and therefore you will have to log-in or sign-up before playing the game. You can sign-up by creating a new ID or you can login for the moment using USERNAME : admin and PASSWORD : admin
 
 ## Contributions
 
 Contributions are welcome.
 
 ## Amendments needed
-### The Collapsing of Tiles features :
+### The files recording problem :
 
-One of the interesting feature of this game - 
+One of the difficult problems faced while creating this project was to use a reliable Python or Java program that record the audio files fo sampling and testing and also stores it in .wav format.
 
-Whenever the player hits a tile with the number 0 behind it, it should collapse all the neighbouring tiles around it till it find tiles with non-zero number behind them.
+We could not find such a reliable tools in these languages. There are tools available that record files in .wav but the loss of information is large in them. Then there methods in which we can record in some other format and run scripts in python to convert them to .wav format. But again loss of information and possibility of addition of noise is large in them.
 
-This is not yet coded in this game. 
+Also it was observed over collected dataset that more the different devices with different hardware and software specifications were used, more were the chances of getting high distortions in frequecny anaysis which made the prediction difficult.
 
-It would be great for this project to have that feature.
+Considering above challenges, the main and only recording tool used in this project is the Windows Recorder. Any suggestions to improve this shotcoings are welcome.
 
 ## Authors
 
 * **Vidish Joshi** - [Profile](https://github.com/VidishJoshi)
+* **Raj Mehta**
+* **Manav Patel**
+* **Ridham Shah**
 
 Thank you to all and any contributors.
 

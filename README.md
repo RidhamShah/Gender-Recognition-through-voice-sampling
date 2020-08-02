@@ -50,6 +50,8 @@ In these type of projects, one can seldom collect large enough dataset and get 1
 ## Authors
 
 * **Vidish Joshi** - [Profile](https://github.com/VidishJoshi)
+* **Manav Patel** - [Profile]()
+* **Raj Mehta** - [Profile]()
 
 Thank you to all and any contributors.
 

@@ -51,7 +51,7 @@ In these type of projects, one can seldom collect large enough dataset and get 1
 
 * **Vidish Joshi** - [Profile](https://github.com/VidishJoshi)
 * **Manav Patel** - [Profile](https://github.com/PatelManav/)
-* **Raj Mehta** - [Profile]()
+* **Raj Mehta**
 
 Thank you to all and any contributors.
 

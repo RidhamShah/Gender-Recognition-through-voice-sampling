@@ -47,11 +47,12 @@ The equation that shows the confidence can be made better using probailistic mod
 
 In these type of projects, one can seldom collect large enough dataset and get 100% accuracy.
 
-## Authors
+## Contributors
 
 * **Vidish Joshi** - [Profile](https://github.com/VidishJoshi)
 * **Manav Patel** - [Profile](https://github.com/PatelManav/)
 * **Raj Mehta**
+* **Ridham Shah** -[Profile](https://github.com/RidhamShah)
 
 Thank you to all and any contributors.
 
